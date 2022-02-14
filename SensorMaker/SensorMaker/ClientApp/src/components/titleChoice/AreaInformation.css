@@ -1,0 +1,45 @@
+﻿* {
+    margin: auto;
+    
+}
+
+#root {
+    display: flex;
+}
+
+.header {
+    height: 40px;
+    width: 600px;
+    line-height: 15px;
+    outline: solid 1px;
+    outline-color: blue;
+    text-align: center;
+    display: flex;
+}
+
+.title{
+    margin-left: 40px;  
+}
+
+.search {
+    padding: 0px 10px 0px 30px;
+}
+
+.button1 {
+    padding-right: -60px; 
+    background-color: white;
+    color: Highlight;
+    font-size: xx-large;
+    margin-left: 5px;
+}
+.button2 {
+    background-color: Highlight;
+    border-radius: 50%;
+    background: BsCloudUpload center 100% no-repeat;
+    color: Highlight;
+    font-size: xx-large;
+}
+
+body{
+
+}
