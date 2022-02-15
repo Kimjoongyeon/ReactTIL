@@ -1,45 +1,110 @@
 ﻿* {
-    margin: auto;
+    margin: 0;
+    padding: 0;
+}
+input:focus {
+    border: none;
+    border-right: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    outline: none;
+    font-size: 18px;
     
 }
-
+li {
+    font-size: 20px;
+    color: Highlight;
+    list-style: none;
+}
 #root {
     display: flex;
 }
-
+.AreaInfoBox {
+    margin-left: 480px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
 .header {
     height: 40px;
-    width: 600px;
+    width: 550px;
     line-height: 15px;
     outline: solid 1px;
     outline-color: blue;
     text-align: center;
     display: flex;
 }
+.body {
+    height: 700px;
+    width: 550px;
+    line-height: 15px;
+    outline: solid 1px;
+    outline-color: blue;
+    text-align: center;
+    display: flex;
+    list-style: none;
+}
 
-.title{
-    margin-left: 40px;  
+.title {
+    margin-top: 5px;
+    margin-left: 20px;
 }
 
 .search {
-    padding: 0px 10px 0px 30px;
+    margin-top: 5px;
+    margin-left: 100px;
+    height: 30px;
+    padding: 8px 0px 10px 0px;
+    outline: solid 1px;
+    outline-color: Highlight;
+    border-radius: 5px 5px;
+    clear: none;
 }
 
+.textBox {
+    width: 180px;
+    text-decoration: none;
+    border: none;
+    border-right: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    margin-top: -10px;
+}
 .button1 {
-    padding-right: -60px; 
+    padding-right: -60px;
     background-color: white;
     color: Highlight;
-    font-size: xx-large;
-    margin-left: 5px;
+    font-size: 1.8em;
+    margin-top: 2px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 .button2 {
     background-color: Highlight;
     border-radius: 50%;
-    background: BsCloudUpload center 100% no-repeat;
+    background: center 100% no-repeat;
     color: Highlight;
     font-size: xx-large;
+    margin-top: 5px;
+    margin-right: 15px;
+}
+.minusButton {
+    background-color: white;
+    top: -50px;
+    color: Highlight;
+    font-size: 2.1em;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 15px;
 }
 
-body{
-
+.imoge {
+    z-index: 1;
 }
+
+.firstTree {
+    list-style: none;
+}
+
+

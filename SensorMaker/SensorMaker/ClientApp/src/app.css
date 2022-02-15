@@ -1,4 +1,6 @@
 ﻿* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -48,13 +50,13 @@ button {
     color: white;
 }
 /*
-.habit {
+.area {
     font-size: 2.5rem;
     padding: 0.5em;
     list-style: none;
 }
 
-.habit-count {
+.area-count {
     display: inline-block;
     text-align: center;
     font-size: 2rem;
@@ -68,27 +70,27 @@ button {
     border-radius: 50%;
 }
 
-.habit-button {
+.area-button {
     font-size: 2.5rem;
     margin: 0 0.1em;
     background-color: transparent;
 }
 
-    .habit-button:hover {
+    .area-button:hover {
         opacity: 0.8;
     }
 
-.habit-increase,
-.habit-decrease {
+.area-increase,
+.area-decrease {
     color: goldenrod;
 }
 
-.habit-delete {
+.area-delete {
     font-size: 2rem;
     color: darkred;
 }
 
-.habits-reset {
+.areas-reset {
     font-size: 1.5rem;
     padding: 0.2em 1em;
     background-color: green;
