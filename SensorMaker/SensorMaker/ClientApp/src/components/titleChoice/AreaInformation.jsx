@@ -59,12 +59,15 @@ class FirstNode extends Component {
     }
 }
 class children extends Component {
+    onAdd = event => {
+        event.preventDefault();
+        const name = this.FirstNode.state.value;
+        this.props.onAdd(name);
+    }
     render() {
-        const data = FirstNode.state.id;
+        //const data = FirstNode.state.id;
         return (
-            if ("first") {
-                <자신 호출>
-                } 
+            
         );
     }
 }
