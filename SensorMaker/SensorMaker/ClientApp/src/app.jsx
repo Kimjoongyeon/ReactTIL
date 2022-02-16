@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './app.css';
-import Areas from './components/titleChoice/areas';
-//import AreaInformation from './components/titleChoice/AreaInformation.jsx';
+import AreaInformation from './components/titleChoice/AreaInformation.jsx';
 
 class App extends Component {
     state = {
@@ -28,7 +27,7 @@ class App extends Component {
     render() {
         return (
             <>
-                <Areas
+                <AreaInformation
                     areas={this.state.areas}
                     onModify={this.handleModify}
                     onDelete={this.handleDelete}
