@@ -5,7 +5,7 @@ class Area extends Component {
         this.props.onModify(this.props.area)
     };
     handleAdd = () => {
-        this.props.onAdd(this.props.name)
+        this.props.onAdd(this.props.area.name)
     };
     handleDelete = () => {
         this.props.onDelete(this.props.area)

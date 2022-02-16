@@ -24,6 +24,7 @@ class Areas extends Component {
                             onModify={this.handleModify}
                             onAdd={this.handleAdd}
                             onDelete={this.handleDelete}
+                            //onDelete={(area) =>{ this.props.handleDelete(area) }}
                         />
                     ))}
                 </ul>

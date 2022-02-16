@@ -1,4 +1,5 @@
-﻿import React, { Component } from 'react';
+﻿import React, { Component, useRef } from 'react';
+
 import { BsFillPlusCircleFill } from "react-icons/bs";
 import { BsCloudUpload } from "react-icons/bs";
 import { BsGear } from "react-icons/bs";
@@ -9,46 +10,31 @@ import "./AreaInformation.css";
 import TreeMenu from 'react-simple-tree-menu';
 
 class AreaInformation extends Component {
-
-    handleAdd = name => {
-        const properties = [...this.state.areas, { key: '1', label: "건물그룹", nodes: [] }];
-        this.setState({ properties });
-    };
-    constructor(props) {
-        super(props);
-        this.state = {
+        handleAdd = () => {
+            this.state.label()
+        };
+        state = {
             properties: [
                 {
-                    key: "0",
-                    label: "건물그룹",
-                    nodes: [
-                        {
-                            key: "0",
-                            label: 1.5,
-                            nodes: []
-                        }
-                    ]
-                },
-                {
-                    key: "1",
-                    label: "건물그룹",
+                    key: 1,
+                    label: 1+ ".건물그룹",
                     nodes: [
                         {
                             key: "1",
-                            label: 50,
+                            label: 1.1 + "A Building",
                             nodes: []
                         }
-                    ]
-                }
+                    ],
+                    key: 2,
+                    label: 2 + ".건물그룹",
+                    nodes: [],
+                },
             ],
-            initiallyOpenProperties: []
-        };
-    }
+        initiallyOpenProperties: []
+    };
     handleExpandTree = () => {
-        console.log("expanding tree");
         this.setState({
-            initiallyOpenProperties: [
-            ]
+            initiallyOpenProperties: []
         });
     };
     render() {
@@ -62,7 +48,7 @@ class AreaInformation extends Component {
                         <input type="text" className="textBox" />
                     </div>
 
-                    <button className="button1" onClick="onIncrement">
+                    <button className="button1" onClick="onAddFirst">
                         <BsFillPlusCircleFill />
                     </button>
                     <button className="button2">
@@ -73,14 +59,14 @@ class AreaInformation extends Component {
                 <div class="body">
                     <tr>
                         <td>
-                            <TreeMenu className="firstTree"
+                            <TreeMenu 
                                 data={this.state.properties}
                                 initialOpenNodes={this.state.initiallyOpenProperties}
                                 hasSearch={false}
                                 onClickItem={this.handleClick}
                             >
                             </TreeMenu>
-                            <button className="button1" onClick="onIncrement"><ImPencil /></button>
+                            <button className="button1" onClick={this.handleAdd}><ImPencil /></button>
                             <button className="button1" onClick=""><BsFillPlusCircleFill /></button>
                             <button className="minusButton" onClick=""><AiFillMinusCircle /></button>
                         </td>
